@@ -1,0 +1,11 @@
+.resource {
+    padding: 180px 0 120px 0;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__button {
+        margin-top: 20px;
+    }
+}

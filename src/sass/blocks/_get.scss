@@ -1,0 +1,39 @@
+.get {
+    height: 415px;
+    background: $main-color;
+    padding: 120px 0 120px 0;
+    position: relative;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .tib {
+            display: block;
+            text-align: center;
+            &__title {
+                color: #fff;
+            }
+            &__descr {
+                color: #fff;
+            }
+        }
+    }
+    &__button {
+        background: #FAB5A0;
+        margin-top: 20px;
+        color: $main-color;
+        &:hover {
+            background: #ff9b7d;
+        }
+    }
+    &__img-1 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &__img-2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

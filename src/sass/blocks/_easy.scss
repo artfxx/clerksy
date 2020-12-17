@@ -1,0 +1,49 @@
+.easy {
+    padding: 120px 0 120px 0;
+    background: #F2EFE6;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__text {
+        text-align: center;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template: minmax(140px,auto)/260px 130px 260px 200px 260px;
+        
+        #easy__elem-2 {
+            grid-column: 3 / 4;
+        }
+        #easy__elem-3 {
+            grid-column: 5 / 6;
+        }
+    }
+    &__elem {
+        padding: 20px 0 20px 0;
+        text-align: center;
+        position: relative;
+        .img-1 {
+            position: absolute;
+            top: 50%;
+            left: 111%;
+        }
+        .img-2 {
+            position: absolute;
+            top: 50%;
+            left: 111%;
+        }
+        .img-3 {
+            position: absolute;
+            top: 10%;
+            left: -5%;
+        }
+        .title {
+            margin-top: 13px;
+        }
+    }
+    &__button {
+        margin-top: 24px;
+    }
+}

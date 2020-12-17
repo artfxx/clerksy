@@ -1,0 +1,49 @@
+.footer {
+    height: 200px;
+    padding: 40px 0 25px 0;
+    &__up {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .title_fz24 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    &__social {
+        width: calc(4/12 * 100%);
+        text-align: right;
+        a {
+            padding-left: 14px;
+        }
+    }
+    &__logo {
+        width: calc(4/12 * 100%);
+    }
+    &__title {
+        width: calc(4/12 * 100%);
+        text-align: center;
+    }
+    &__down {
+        margin-top: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    &__links {
+        a {
+            margin-left: 14px;
+            font-family: Noto Sans;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #198C36;
+        }
+    }
+    &__copiright {
+        font-size: 14px;
+        line-height: 21px;  
+        color: $main-color;
+    }
+}

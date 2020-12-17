@@ -1,0 +1,37 @@
+.stay {
+    height: 240px;
+    padding: 60px 0 60px 0;
+    background: #F2EFE6;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 590px);
+        align-items: center;
+    }
+    &__elem-1 {
+        justify-self: start;
+    }
+    &__input {
+        position: relative;
+        #email {
+            height: 45px;
+            padding: 0 20px 0 20px;
+            background: #FFFFFF;
+            border: 1px solid #F2EFE6;
+            border-radius: 255px;
+            width: 90%;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &__button {
+        position: absolute;
+        right: 0;
+    }
+    &__policy {
+        margin-top: 15px;
+        a {
+            color: #198C36;
+        }
+    }
+}
