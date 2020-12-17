@@ -6,7 +6,12 @@
 
 * {
     font-family: 'Noto Sans', sans-serif;
+    body {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
 }
+
 
 @font-face {
     font-family: 'Recoleta';
@@ -27,10 +32,6 @@
     font-style: normal;
 }
 
-.main-width {
-    width: 1440px;
-    margin: 0 auto;
-}
 .container {
     width: 1180px;
     margin: 0 auto;
@@ -39,4 +40,6 @@
 @import 'blocks/text-block';
 @import 'blocks/running';
 @import 'blocks/button.scss';
+@import 'blocks/human';
+@import 'blocks/production';
 

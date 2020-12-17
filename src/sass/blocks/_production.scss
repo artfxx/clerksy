@@ -1,0 +1,31 @@
+.production {
+    height: 570px;
+    background: $main-color;
+    &__body {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    &__title {
+        margin-top: 66px;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+    }
+    &__descr {
+        margin-top: 23px;
+        color: #fff;
+        text-align: center;
+    }
+    &__icons {
+        padding-top: 75px;
+        display: flex;
+        justify-content: space-around;
+        img {
+            min-width: auto;
+            max-width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+    }
+}
