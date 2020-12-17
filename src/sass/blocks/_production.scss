@@ -1,13 +1,15 @@
 .production {
     height: 570px;
     background: $main-color;
+    display: flex;
+    align-items: center;
     &__body {
         display: flex;
         flex-direction: column;
         text-align: center;
+        justify-content: center;
     }
     &__title {
-        margin-top: 66px;
         display: flex;
         justify-content: center;
         color: #fff;
@@ -23,8 +25,8 @@
         justify-content: space-around;
         img {
             min-width: auto;
-            max-width: 150px;
-            height: 150px;
+            max-width: 100px;
+            height: 100px;
             object-fit: cover;
         }
     }
