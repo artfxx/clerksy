@@ -27,8 +27,16 @@
     font-style: normal;
 }
 
+.main-width {
+    width: 1440px;
+    margin: 0 auto;
+}
 .container {
     width: 1180px;
     margin: 0 auto;
 }
+
+@import 'blocks/text-block';
+@import 'blocks/running';
+@import 'blocks/button.scss';
 

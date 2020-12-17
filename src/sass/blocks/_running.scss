@@ -1,0 +1,47 @@
+.running {
+    height: caclc(98px + 544px);
+    background-color: $main-color;
+    &__header {
+        padding: 20px 0 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-right {
+            margin-right: 10px;
+            a {
+                margin-right: 24px;
+                font-family: Noto Sans;
+                font-weight: 400;
+                font-size: 16px;
+                text-decoration: none;
+                color: #fff;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+                &:hover {
+                    background-size: 100% 2px;
+                }
+            }
+            button {
+                height: 52px;
+            }
+        }
+    }
+    &__body {
+        display: grid;
+        grid-template-columns: auto auto;
+        .title {
+            color: #fff;
+            line-height: 65px;
+        }
+        .description {
+            margin-top: 18px;
+            color: #fff;
+        }
+        &-text {
+            align-self: center;
+        }
+    }
+}
