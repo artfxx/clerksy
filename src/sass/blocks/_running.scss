@@ -6,6 +6,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        a {
+            &:focus {
+                outline: none;
+            }
+        }
         &-right {
             margin-right: 10px;
             a {
