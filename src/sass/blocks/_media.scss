@@ -1,0 +1,339 @@
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1000px;
+    }
+    .running {
+        &__body {
+            grid-template-columns: 39% 61%;
+            &-img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .employees {
+        img {
+            width: 100%;
+        }
+    }
+    .consider {
+        &__wrapper {
+            grid-template: minmax(390px,auto)/repeat(3,auto);
+            align-items: stretch;
+        }
+    }
+    .easy {
+        &__wrapper {
+            width: 100%;
+            grid-template: minmax(140px,auto)/auto 100px auto 170px auto;
+        }
+        &__elem {
+            .img-3 {
+                left: -9%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 800px;
+    }
+    .title {
+        font-size: 31px;
+        line-height: 42px;
+    }
+    .running {
+        &__body {
+            grid-template-columns: 39% 61%;
+            &-img {
+                img {
+                    width: 100%;
+                }
+            }
+            &-text {
+                padding-right: 50px;
+            }
+            .title {
+                font-size: 33px;
+                line-height: 42px;
+            }
+            .description {
+                font-size: 17px;
+                line-height: 24px;
+            }
+        }
+    }
+    .human {
+        &__body {
+            grid-template-columns: 100%;
+            &-img {
+                img {
+                    width: 100%
+                }
+            }
+        }
+        &__footer {
+            &-icons {
+                padding: 65px 0 0 0;
+            }
+        }
+    }
+    .employees {
+        &__text {
+            padding: 0 120px;
+        }
+    }
+    .scenes {
+        .tib {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .easy {
+        &__wrapper {
+            align-items: center;
+            justify-content: center;
+            grid-template: minmax(140px,auto)/150px 90px 150px 150px 230px;
+            .description {
+                font-size: 16px;
+            }
+            .img-2 {
+                img {
+                    left: calc(50% - 30px);
+                }
+            }
+        }
+        &__elem {
+            .img-3 {
+                left: -5%;
+                img {
+                    width: 107%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .running {
+        &__body {
+            &-text {
+                padding-right: 25px;
+            }
+            .title {
+                font-size: 28px;
+                line-height: 35px;
+            }
+        }
+    }
+    .human {
+        .description {
+            margin-top: 18px;
+        }
+        &__body {
+            &-elem1 {
+                grid-template-columns: auto 44%;
+            }
+            &-elem2 {
+                grid-template-columns: 44% auto;
+            }
+        }
+    }
+    .production {
+        padding: 120px 0;
+        &__icons {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            justify-content: center;
+            gap: 70px;
+        }
+    }
+    .employees {
+        &__text {
+            width: unset;
+        }
+    }
+    .scenes {
+        .tib {
+            grid-template-columns: auto 44%;
+        }
+    }
+    .consider {
+        padding: 60px 0;
+        &__wrapper {
+            grid-template: auto / repeat(2, auto);
+        }
+    }
+    .easy {
+        &__wrapper {
+            align-items: start;
+            grid-template: minmax(140px,auto) / 1fr;
+            #easy__elem-2 {
+                grid-column: unset;
+            }
+            #easy__elem-3 {
+                padding: 20px 250px;
+                grid-column: unset;
+            }
+            .img-1 {
+                display: none;
+            }
+            .img-2 {
+                display: none;
+            }
+        }
+        &__elem {
+            .img-3 {
+                left: -5%;
+                img {
+                    width: 107%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .description {
+        font-size: 16px;
+        margin-top: 18px;
+    }
+    .running {
+        &__header {
+            flex-direction: column;
+            padding-bottom: 75px;
+            &-right {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 30px 0 0 0;
+                a {
+                    margin: 0 0 20px 0;
+                }
+            }
+        }
+        &__body {
+            grid-template-columns: 95%;
+            justify-content: center;
+            text-align: center;
+            &-text {
+                padding: 0px 40px;
+                margin-bottom: 75px;
+            }
+            .title {
+                font-size: 37px;
+                line-height: 42px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .human {
+       padding: 100px 0 60px 0;
+       &__body {
+            grid-template-columns: 90%;
+            text-align: center;
+            &-elem1 {
+                grid-template-columns: 100%;
+                gap: 50px;
+            }
+            &-elem2 {
+                margin-top: 50px;
+                grid-template-columns: 100%;
+                gap: 50px;
+                #elem2-text {
+                    order: 2;
+                }
+            }
+        }
+        &__footer {
+            &-icons {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                text-align: center;
+                row-gap: 25px;
+            }
+        }
+    }
+    .production {
+        padding: 60px 0;
+    }
+    .employees {
+        padding: 60px 0;
+        &__text {
+            width: unset;
+            padding: 0;
+        }
+    }
+    .scenes {
+        padding-top: 60px;
+        text-align: center;
+        .tib {
+            grid-template-columns: 90%;
+            justify-content: center;
+            gap: 50px;
+        }
+    }
+    .consider {
+        padding: 60px 0;
+        &__wrapper {
+            grid-template: auto / 350px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        font-size: 28px;
+        line-height: 37px;
+    }
+    .description {
+        font-size: 16px;
+    }
+    .running {
+        &__body {
+            &-text {
+                padding: 0px;
+            }
+        }
+    }
+    .human {
+        text-align: center;
+        &__footer {
+            padding-top: 80px;
+            &-icons {
+                padding: 65px 0 0 0;
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+    .production {
+        padding: 60px 0;
+        &__icons {
+            grid-template-columns: auto;
+        }
+    }
+    .consider {
+        padding: 60px 0;
+        &__wrapper {
+            grid-template: auto/auto;
+            padding: 0 20px;
+        }
+    }
+}
