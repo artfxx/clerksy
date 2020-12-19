@@ -34,6 +34,16 @@
             }
         }
     }
+    .stay {
+        &__wrapper {
+            grid-template-columns: repeat(2,1fr);
+        }
+        &__policy {
+            span {
+                font-size: 15px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -115,6 +125,23 @@
             }
         }
     }
+    .resource {
+        .tib {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .stay {
+        &__wrapper {
+            align-items: start;
+        }
+    }
+    .footer {
+        &__links {
+            text-align: end;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -160,12 +187,13 @@
         }
     }
     .scenes {
+        padding-top: 120px;
         .tib {
             grid-template-columns: auto 44%;
         }
     }
     .consider {
-        padding: 60px 0;
+        padding: 60px 0 120px 0;
         &__wrapper {
             grid-template: auto / repeat(2, auto);
         }
@@ -190,12 +218,39 @@
         }
         &__elem {
             .img-3 {
-                left: -5%;
+                left: 29%;
+                top: 27px;
                 img {
-                    width: 107%;
+                    width: 83%;
                 }
             }
         }
+        &__button {
+            margin-top: 45px;
+        }
+    }
+    .resource {
+        padding: 120px 0;
+        .tib {
+            grid-template-columns: auto 44%;
+        }
+    }
+    .get {
+        &__img-1 {
+            img {
+                width: 70%;
+            }
+        }
+        &__img-2 {
+            text-align: end;
+            img {
+                width: 70%;
+            }
+        }
+    }
+    .stay {
+        padding: 120px 0;
+        height: unset;
     }
 }
 
@@ -292,6 +347,93 @@
             justify-content: center;
         }
     }
+    .easy {
+        padding: 60px 0;
+        &__wrapper {
+            #easy__elem-3 {
+                padding: 20px 170px;
+            }
+        }
+        &__elem {
+            .img-3 {
+                left: 23%;
+                top: 16px;
+            }
+        }
+    }
+    .resource {
+        padding: 60px 0;
+        text-align: center;
+        .tib {
+            grid-template-columns: 90%;
+            justify-content: center;
+            gap: 50px;
+        }
+    }
+    .get {
+        padding: 60px 0;
+        height: unset;
+        &__img-1 {
+            img {
+                width: 40%;
+            }
+        }
+        &__img-2 {
+            text-align: end;
+            img {
+                width: 40%;
+            }
+        }
+    }
+    .stay {
+        padding: 60px 0;
+        .description {
+            margin: 18px 0 26px 0;
+        }
+        &__wrapper {
+            text-align: center;
+            justify-content: center;
+            grid-template-columns: 465px;
+        }
+        &__elem-1 {
+            justify-self: unset;
+        }
+        &__policy {
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .footer {
+        height: unset;
+        &__up {
+            flex-direction: column;
+            text-align: center;
+        }
+        &__title {
+            width: unset;
+            margin: 30px 0;
+        }
+        &__social {
+            width: unset;
+            a {
+                padding: 7px;
+            }
+        }
+        &__down {
+            margin-top: 30px;
+            flex-direction: column;
+        }
+        &__copiright {
+            margin: 20px 0;
+        }
+        &__links {
+
+            a {
+                margin: 7px;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -334,6 +476,48 @@
         &__wrapper {
             grid-template: auto/auto;
             padding: 0 20px;
+        }
+    }
+    .easy {
+        &__wrapper {
+            #easy__elem-3 {
+                padding: 20px 0;
+                .img-3 {
+                    display: none;
+                }
+            }
+        }
+    }
+    .get {
+        text-align: center;
+        &__img-1 {
+            z-index: 1;
+            text-align: left;
+            img {
+                width: 30%;
+            }
+        }
+        &__img-2 {
+            z-index: 1;
+            img {
+                width: 30%;
+            }
+        }
+        &__button {
+            z-index: 2;
+        }
+    }
+    .stay {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+    .footer {
+        &__down {
+            text-align: center;
+        }
+        &__links {
+            text-align: center;
         }
     }
 }

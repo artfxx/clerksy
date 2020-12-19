@@ -12,6 +12,9 @@
     }
     &__input {
         position: relative;
+        &-i {
+            display: flex;
+        }
         #email {
             height: 45px;
             padding: 0 20px 0 20px;
